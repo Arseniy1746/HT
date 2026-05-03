@@ -4,9 +4,9 @@ using namespace std;
 
 typedef unsigned int uint;
 
-#define one_block_size_bytes 64 // количество байn в блоке
-#define one_block_size_uints 16 // количество 4-x байтовых в блоке
-#define block_expend_size_uints 80 // количество 4 байтовых в дополненном блоке
+#define one_block_size_bytes 64 // РєРѕР»РёС‡РµСЃС‚РІРѕ Р±Р°Р№n РІ Р±Р»РѕРєРµ
+#define one_block_size_uints 16 // РєРѕР»РёС‡РµСЃС‚РІРѕ 4-x Р±Р°Р№С‚РѕРІС‹С… РІ Р±Р»РѕРєРµ
+#define block_expend_size_uints 80 // РєРѕР»РёС‡РµСЃС‚РІРѕ 4 Р±Р°Р№С‚РѕРІС‹С… РІ РґРѕРїРѕР»РЅРµРЅРЅРѕРј Р±Р»РѕРєРµ
 
 #define SHA1HASHLENGTHBYTES 20
 #define SHA1HASHLENGTHUINTS 5
@@ -20,7 +20,7 @@ const uint H[5] = {
     0x98BADCFE,
     0x10325476,
     0xC3D2E1F0
-}; // константы, согласно стандарту
+}; // РєРѕРЅСЃС‚Р°РЅС‚С‹, СЃРѕРіР»Р°СЃРЅРѕ СЃС‚Р°РЅРґР°СЂС‚Сѓ
 
 uint cycle_shift_left(uint val, int bit_count);
 uint bring_to_human_view(uint val);

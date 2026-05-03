@@ -35,13 +35,13 @@ private:
             if (pass_sha1_hash != 0)
                 delete[] pass_sha1_hash;
         }
-        // копирует логин, забирает внутрь хеш
+        // РєРѕРїРёСЂСѓРµС‚ Р»РѕРіРёРЅ, Р·Р°Р±РёСЂР°РµС‚ РІРЅСѓС‚СЂСЊ С…РµС€
         AuthData(char _login[LOGINLENGTH], uint* sh1) {
             memcpy(login, _login, LOGINLENGTH);
             pass_sha1_hash = sh1;
             status = CellStatus::engaged;
         }
-        // копирует всё
+        // РєРѕРїРёСЂСѓРµС‚ РІСЃС‘
         AuthData& operator = (const AuthData& other) {
             memcpy(login, other.login, LOGINLENGTH);
 
